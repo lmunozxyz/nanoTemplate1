@@ -5,13 +5,15 @@ html{
 }
 
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color:#1c1e21;
+    color:#333;
     font-weight: 400;
     line-height: 1.5;
     background-color:white;
+    
 
 }
 
@@ -27,7 +29,7 @@ header{
     box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 20%);   
     margin-bottom: 5px;
     position:fixed;
-
+    top:0;
     z-index: 10;
 }
 
@@ -46,6 +48,8 @@ nav{
 }
 
 main{
+    width: 100%;
+    padding: 0;
     padding: 0;
     margin: 0;
     background-color: rosybrown;
@@ -56,12 +60,16 @@ h1, h2 {
     text-align: center;
 }
 
+.supportingText {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .subTitle{
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 0 0 40px 0;
 }
 
 .titleSubtitle{
@@ -70,38 +78,63 @@ h1, h2 {
     margin-right: 15%;
     margin-top: 80px;
     margin-bottom: 20px;
+    color: aqua;
 }
 
 .cardsWrapper1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    align-items:flex-start;
+    width: 960px;
+    margin: 0 auto;
+    /* background-color: bisque; */
 }
-
-
-
 
 /* Sección HERO mas card1 */
 .sectionHero{
+    width: 100%;
+    height: auto;
     background-color: #f0f2f5;
     margin: 0;
-    padding: 50px 20px 200px 20px;
+
+    padding: 50px 0 100px 0;
     position: relative;
-    top:69px;
-    background: #ffffff url('../img/back1.jpg') no-repeat right top;
+    top: 44px;
+    background: #ffffff url('../img/back1.jpg') repeat right top;
 }
 
+/*    =====================================================================  */
+
+
+
 .card1 {
-    padding: 25px;
-    margin: 20px;
-    background-color: white;
+    padding: 0 25px 25px 25px;
+    margin: 0 0 0 0;
+
+    background-image: url('../img/sq_white_20x20_transparent_90.png');
     width: 250px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
     border: none;
-
+   
 }
+
+
+/* .box-margin-1 { margin: 0 25px 25px 0 }
+
+.box-margin-2{
+    margin: 0 0 25px 0;
+}
+
+.box-margin-3{
+    margin: 0 0 0 25px;
+}
+ */
+
+
+/*    =====================================================================  */
+
 
 .card2 {
     padding: 25px;
@@ -117,15 +150,18 @@ h1, h2 {
 .sectionOne{
     background-color: #f0f2f5;
     /* background-image: url('../img/back1.jpg'); */
+
     margin: 0;
-    padding: 50px 20px 100px 20px;
+    padding: 50px 0 100px 0;
     position: relative;
+
 }
 
 .sectionTwo{
     background-color:white;
     margin: 0;
-    padding: 50px 20px 100px 20px;
+    margin: 0;
+    padding: 50px 0 100px 0;
     position: relative;
     background-image: url('../img/patt1.png');
     background-repeat: no-repeat;
@@ -137,7 +173,7 @@ h1, h2 {
     display: flex;
     width: 100%;
     height: auto;
-    background-color:lightblue;
+    background-color:white;
     margin: 0;
     padding: 0;
     flex-direction: row;
@@ -149,8 +185,6 @@ h1, h2 {
     bottom: 0px;
     box-shadow: 0px 0px 3px 3px rgb(0 0 0 / 20%) ;  
     /* box-shadow: 5px 5px black;  */
-
-
 }
 
 .wazeWrapper {
@@ -162,21 +196,16 @@ h1, h2 {
 .bottom-button{
     display: flex;
     background-color:white;
-    width: 20%;
+    width: 25%;
     height: 50px;
     justify-content: center;
     align-items: center;
-    
-
-
-
-    
 }
 
 .btn-button1{
     /* background-color: greenyellow; */
     font-size: 1rem;
-    border-right: 1px solid rgb(209, 206, 206);
+    border-right: 1px solid rgb(233, 228, 228);
 
 }
 
@@ -195,10 +224,61 @@ h1, h2 {
 
 .btn-button4{
     /* background-color:khaki; */
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     border-right: 1px solid rgb(209, 206, 206);
 }
 
+
+.bannerWrapper {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: blue; */
+    text-align: center;
+    color: white;
+}
+
+.button {
+    background-color:yellow; /* Green */
+    border: none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+.button2 {background-color: #008CBA;} /* Blue */
+
+
+
+
+
+.contact {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    background-color: burlywood;
+}
+
+
+
+.contactInfo {
+    width: 50%;
+    height: auto;
+    background-color: chocolate;
+}
+
+.contactForm {
+    width: 50%;
+    height: auto;
+    background-color: cornflowerblue;
+}
 
 
 footer{
@@ -206,7 +286,116 @@ footer{
     height: auto;
     background-color:white;
     text-align: center;
-    padding: 5px 0;
+    padding: 0;
     font-size: 0.7rem;
   
+}
+
+@media only screen and (max-width: 550px) {
+    .card1 {
+        width: 250px;
+        /* background-color: yellow; */
+    }
+
+    .box-margin-1{
+        margin: 0 0 25px 0;
+    }
+    
+    .box-margin-2{
+        margin: 0 0 25px 0;
+    }
+    
+    .box-margin-3{
+        margin: 0;
+    }
+
+    .cardsWrapper1{
+        width: 100%;
+        margin: 0 auto;
+        justify-content:center;
+        /* background-color: aquamarine; */
+
+    }
+
+    .bannerWrapper {
+        width: 90%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+    
+    
+    .contactInfo {
+        width: 90%;
+    }
+
+    .contactForm {
+        width: 90%;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1023px) {
+ 
+    /* .box-margin-1{
+        margin: 0 25px 25px 0;
+        margin: 0;
+    }
+    
+    .box-margin-2{
+        margin: 0 0 25px 0;
+    }
+    
+    .box-margin-3{
+        margin: 0 0 0 25px;
+    } */
+
+    .box-margin-1, .box-margin-2, .box-margin-3 {
+        margin: 20px;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .cardsWrapper1{
+        width: 100%;
+        margin: 0 auto;
+        justify-content:center;
+        /* background-color: aquamarine; */
+
+    }
+
+    .bannerWrapper {
+        width: 90%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+    
+    
+    .contactInfo {
+        width: 45%;
+    }
+
+    .contactForm {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .hamburger-button {
+        display: none;
+    }
+
+    .bottom-buttons {
+        display: none;     
+    }
+
 }
