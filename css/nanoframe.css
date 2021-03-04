@@ -52,7 +52,7 @@ main{
     padding: 0;
     padding: 0;
     margin: 0;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     position: relative;
 }
 
@@ -65,6 +65,12 @@ h1, h2 {
     height: auto;
     margin: 0 auto;
     padding: 0;
+}
+
+.supportingText h1 {
+    font-family: gd-sage,"Times","Times New Roman",serif;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .subTitle{
@@ -263,7 +269,9 @@ h1, h2 {
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
-    background-color: burlywood;
+    /* background-color: burlywood; */
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 
@@ -271,15 +279,71 @@ h1, h2 {
 .contactInfo {
     width: 50%;
     height: auto;
-    background-color: chocolate;
+    /* background-color: chocolate; */
+    text-align: center;
 }
 
 .contactForm {
     width: 50%;
     height: auto;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 }
 
+input[type=text] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+
+
+
+    display: block;
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+
+.textAreaData {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+
+
+
+    display: block;
+    width: 96%;
+    padding: 2%;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+
+
+.inputData {
+
+}
+
+.contactInfo p {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
 
 footer{
     width: 100%;
