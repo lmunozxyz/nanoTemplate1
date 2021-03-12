@@ -65,7 +65,10 @@ h1, h2 {
     height: auto;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
+
+
 
 .supportingText h1 {
     font-family: gd-sage,"Times","Times New Roman",serif;
@@ -263,11 +266,22 @@ h1, h2 {
 
 
 .contact {
+    width: 100%;
+    height: auto;
+    background-color: #f0f2f5;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    
+}
+
+.contactWrapper {
     width: 960px;
     height: auto;
     margin: 0 auto;
     display: flex;
     justify-content:center;
+    align-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
     /* background-color: burlywood; */
     padding-top: 50px;
@@ -280,30 +294,36 @@ h1, h2 {
     width: 50%;
     height: auto;
     /* background-color: chocolate; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .contactForm {
     width: 50%;
     height: auto;
+
     /* background-color: cornflowerblue; */
 }
 
+.contactForm label {
+    font-size: 0.9rem;
+}
+
+.contactInfo h2 {
+    margin-top: 0;
+}
+
 input[type=text] {
-    padding: 10px;
+    padding: 5x;
     margin: 10px 0;
     border: 1px solid blue;
     border-radius: 5px;
     box-shadow: 0 0 5pt 0.5pt #D3D3D3;
-
-
-
+    color: #333;
     display: block;
     width: 96%;
     padding: 2%;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -335,14 +355,64 @@ input[type=text] {
     
 }
 
+.buttonForm {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    display: inline-block;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 20px;
+}
+
+
 
 .inputData {
 
 }
 
+.contactInfo h2 {
+    text-align: left;
+}
+
 .contactInfo p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+.socialIcon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.socialH {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.contactInfo {
+    width: 35%;
+}
+
+.contactForm {
+    width: 45%;
 }
 
 footer{
@@ -392,10 +462,24 @@ footer{
     
     .contactInfo {
         width: 90%;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    form {
+        padding-top: 50px;
+    }
+
+    .mobileSpacer {
+        display: block;
     }
 
     .contactForm {
         width: 90%;
+    }
+
+    .contactWrapper {
+        width: 100%;
     }
 
     .hamburger-button {
@@ -441,14 +525,22 @@ footer{
     .contact {
         width: 100%;
     }
+
+    .contactWrapper {
+        width: 100%;
+    }
     
     
     .contactInfo {
-        width: 45%;
+        width: 37%;
     }
 
     .contactForm {
         width: 45%;
+    }
+
+    .mobileSpacer {
+        display: none;
     }
 }
 
@@ -460,6 +552,10 @@ footer{
 
     .bottom-buttons {
         display: none;     
+    }
+
+    .mobileSpacer {
+        display: none;
     }
 
 }
